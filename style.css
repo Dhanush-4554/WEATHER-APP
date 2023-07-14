@@ -1,0 +1,298 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+
+/* for all components */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 11, 65);
+}
+
+/* general */
+.body {
+    display: flex;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+main {
+    width: 75%;
+    background-color: #d8d8d857;
+}
+aside {
+    border-left: 1px solid #bababa99;
+    width: 25%;
+    background-color: #c6c6c66c;
+}
+
+/* header */
+header {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>.location {
+    padding: 5px;
+}
+
+header>.location>.city {
+    font-size: 30px;
+}
+
+header>.location>.country {
+    padding-top: 6px;
+    font-size: 20px;
+}
+
+header>.location>.country>i {
+    padding: 0 10px;
+    padding-left: 0;
+}
+
+header>.searchArea {
+    position: relative;
+    width: 300px;
+    margin: 20px 0;
+}
+
+header>.searchArea>input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    color: rgb(0, 11, 65);
+    border: 1.5px solid #bcbcbc71;
+    background-color: #ededed;
+}
+header>.searchArea>input:focus {
+    border-color: black;
+}
+::placeholder {
+    color: rgb(0, 11, 65);
+}
+header>.searchArea>i {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    color: rgb(255, 149, 0);
+    cursor: pointer;
+    font-size: 17px;
+    width: 50px;
+    text-align: center;
+    padding: 7px 0px;
+    margin: 0;
+    border-radius: 6px;
+}
+header>.searchArea>i:hover {
+    background-color: #a4a4a4;
+}
+
+
+
+/* main weather report */
+.weatherReport {
+    display: flex;
+}
+.currentweather {
+    width: 50%;
+    margin: 10px 30px;
+    height: 250px;
+    background: linear-gradient(to right bottom, rgba(219, 198, 159, 0.557), rgba(120, 231, 220, 0.706));
+    border-radius: 30px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),-2px -2px 10px rgba(0, 0, 0, 0.2);
+    padding:20px;
+}
+.weatherHeader{
+    display: flex;
+    align-items: center;
+}
+.weatherHeader > i{
+    font-size: 12px;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100%;
+    margin: 10px;
+    border: 2px solid rgb(6, 0, 42);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4),-1px -1px 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0;
+}
+.currentweather > .temp{
+    display: flex;
+    align-items: center;
+}
+.currentweather >.temp> h2{
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+.currentweather >.temp> img{
+    margin-top: 30px;
+    padding-left: 25px;
+    height: 80px;
+}
+.currentweather >.temp> .celcius{
+    padding-left: 5px;
+    font-size: 30px;
+}
+.currentweather > p{
+    padding-left: 10px;
+    font-size: 18px;
+    color: #6d6d6d;
+    margin-top: 10px;
+}
+
+
+
+
+/* humidity and uv report  */
+.humidUV {
+    margin: 10px 50px;
+    margin-left: 0;
+    width: 50%;
+    height: 250px;
+    background: linear-gradient(to right bottom , rgba(120, 231, 220, 0.706), rgba(215, 196, 160, 0.557));
+    border-radius: 30px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),-2px -2px 10px rgba(0, 0, 0, 0.2);
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.humidUV > .humidity,.uv{
+    height: 100px;
+    background-color: rgb(1, 183, 255);
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.humidUV >.humidity{
+    background-color: rgb(0, 11, 65);
+
+}
+.humidUV >.humidity >h2,.humidUV >.humidity>h4{
+    color: white;
+    text-align: center;
+}
+.humidUV >.uv >h2,.humidUV >.uv>h3{
+    text-align: center;
+    align-items: center;
+}
+.humidUV >.uv>mark{
+    border-radius: 20px;
+    padding: 2px 10px;
+    align-items: center;
+    font-size: 15px;
+    background-color: rgb(0, 255, 89);
+    text-align: center;
+}
+
+
+
+
+/* aside  */
+/* time and date  */
+.timeAndDate{
+    width: 70%;
+    margin: 40px auto;
+}
+.sun{
+    margin-top: 60px;
+}
+.sun > .sunrise, .sun > .sunset{
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 151), rgb(251, 203, 113));
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1),-2px -2px 10px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sun > .sunset{
+    background-image: linear-gradient(to bottom right, rgb(255, 172, 157), rgb(251, 203, 113));
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+/* footer  */
+.footer{
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(7, 0, 42);
+}
+.footer > h5{
+    color: white;
+    margin-bottom: 15px;
+}
+.footer > a{
+    color: white;
+    background-color: #a4a4a4;
+    text-decoration: none;
+    margin: 10px;
+    padding: 3px;
+    border-radius: 4px;
+}
+.footer> a:hover{
+    background-color: rgb(1, 183, 255);
+    transition: 1s;
+}
+
+@media(max-width: 900px){
+    .body{
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    main{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .timeAndDate{
+        text-align: center;
+    }
+    .timeAndDate,.sun{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 560px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .weatherReport{
+        flex-direction: column;
+        align-items: center;
+    }
+    .humidUV{
+        margin:20px auto;
+    }
+    .currentweather,.humidUV{
+        width: 80%;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c74ea64294.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="body">
+        <main>
+            <!-- location and search bar -->
+            <header>
+                <div class="location">
+
+                    <h2 id="city">Bengaluru</h2>
+                    <h3 id="country"><i class="fa-sharp fa-solid fa-location-dot"></i>India</h3>
+                </div>
+                <div class="searchArea">
+                    <input type="text" id="search" placeholder="Enter city name" spellcheck="false">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </header>
+            <!-- current day weather and days report -->
+            <section class="weatherReport">
+                <div class="currentweather">
+                    <div class="weatherHeader">
+                        <i class="fa-solid fa-cloud"></i>
+                        <h3>Current Weather</h3>
+                    </div>
+                    <div class="temp">
+                        <h2 id="currentTemp">22</h2><p class="celcius"><sup>o</sup>c</p>
+                        <img src="" id="weatherLogo">
+                    </div>
+                    <p id="desc">windy </p>
+                </div>
+                <div class="humidUV">
+                    <div class="humidity">
+                        <h4>HUMIDITY</h4>
+                        <h2 id="humidityLevel">85%</h2>
+                    </div>
+                    <div class="uv">
+                        <h3>UV INDEX</h3>
+                        <h2 id="uvi">1 </h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- forecast -->
+        <aside>
+            <div class="timeAndDate">
+                <h2 class="time">12:00:00 AM</h2>
+                <p class="date">13 July 2023, Thursday</p>
+            </div>
+            <div class="sun">
+                <div class="sunrise">
+                    <span class="material-symbols-outlined">
+                        light_mode
+                    </span>
+                    <div>
+                        <p>SUNRISE:</p>
+                        <p id="sunrise">6:30 AM</p>
+                    </div>
+
+                </div>
+                <div class="sunset">
+                    <span class="material-symbols-outlined">
+                        sunny_snowing
+                    </span>
+                    <div>
+                        <p>SUNSET:</p>
+                        <p id="sunset">6:30 PM</p>
+                    </div>
+                </div>
+        </aside>
+    </div>
+    <!-- footer  -->
+    <div class="footer">
+       <h5>Made with love by Dhanush B </h5> 
+       <a href="https://dhanush4554.netlify.app/">Know More</a>
+    </div>
+    
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
