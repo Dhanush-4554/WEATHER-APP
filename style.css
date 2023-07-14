@@ -15,12 +15,12 @@
 /* general */
 .body {
     display: flex;
-    height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 main {
+    padding-bottom: 70px;
     width: 75%;
     background-color: #d8d8d857;
 }
